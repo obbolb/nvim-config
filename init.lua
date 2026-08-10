@@ -129,7 +129,8 @@ vim.keymap.set("n", "<Leader>fh", fzf.helptags, { desc = "Find Help" })
 -- LSP
 vim.keymap.set("n", "gd", fzf.lsp_definitions, { desc = "Goto Definition" })
 vim.keymap.set("i", "<C-Space>", "<C-x><C-o>", { desc = "Trigger LSP completion" })
-vim.keymap.set("n", "<Leader>ld", vim.diagnostic.open_float, { desc = "Find Help" })
+vim.keymap.set("n", "<Leader>ld", vim.diagnostic.open_float, { desc = "Show Diagnostic Under Cursor" })
+vim.keymap.set("n", "<Leader>lf", vim.lsp.buf.format, { desc = "Format Buffer" })
 
 -- Terminal
 vim.keymap.set("n", "<Leader>th", "<cmd>hor term<CR>", { desc = "Horizontal Terminal" })
